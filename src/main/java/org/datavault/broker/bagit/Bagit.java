@@ -28,6 +28,7 @@ import java.util.ArrayList;
 public class Bagit {
 
     public static void main(String[] args) throws Exception {
+        // Select path to 'bag' here...
         File directory = new File("/Users/stuartlewis/Pictures");
 
         BagFactory bf = new BagFactory();
@@ -66,6 +67,10 @@ public class Bagit {
             bag.close();
         }
 
+
+        /**
+         * Some demo tika code...
+         */
         TikaConfig tika = new TikaConfig();
         Metadata metadata = new Metadata();
         metadata.set(Metadata.RESOURCE_NAME_KEY, "/Users/stuartlewis/Dropbox/RLS Summer Update 2013v3.pdf");
